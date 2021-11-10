@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@font-face {
+    font-family: TESLA;
+    src: url(./TESLA.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #f0eded;
+}
+
+section .showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: #f4f4f4;
+}
+
+.sec2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    background: #f4f4f4;
+}
+
+.header{
+    position: relative;
+    height: 95vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0,0,0,0.35)) ,url(../img/-1x-1.jpg);
+    background-blend-mode:overlay(rgba(233, 233, 233, 0.144));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    padding: 2rem;
+}
+.header .logo,
+.header nav a{
+    color: black;
+}
+
+/* ###########################Utility class############################# */
+
+.margin{
+    padding-top: 2rem;
+}
+.text-grey{
+    color: rgb(68, 67, 67);
+}
+.text-pureblack{
+    color: black;
+}
+.container{
+    max-width: 1300px;
+    width: 90%;
+    margin:0 auto;
+}
+.lg-heading{
+    font-size: 4.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+.text-blk{
+    color: rgb(255, 255, 255);
+}
+
+.bold{
+    font-weight: bold;
+}
+.text-grey{
+    color: #555;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.bg-darkblack{
+    background-color: #263238;
+    color: #fff;
+}
+.primary-btn{
+    background-color: #f4f4f4;
+    border-radius: 10em;
+
+}
+.secondary-btn{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: white;
+}
+.primary-btn:hover{
+    background: #fcf3f2;
+}
+
+/* ####################STYLING############### */
+.logo{
+    float: left;
+    padding: 2rem;
+    font-family: 'TESLA';
+}
+
+ .nav .nvitems{
+    float: right;
+    margin-top: 2rem;
+}
+
+.nav .nvitem{
+    display: inline-block;
+    list-style: none;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+
+}
+h1{
+    width: 900px;
+    height: 55px;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+
+}
+
+h1 >a{
+    font-size: 4.5rem;
+}
+
+.nav a:link,
+.nav a:visited{
+    color: #171A20;
+}
+.navnew a:link,
+.nav a:visited{
+    color: #fff;
+}
+
+.nav a:hover{
+    border-bottom: 1px solid #171A20;
+
+}
+.nav a{
+    padding-bottom: 0.35rem;
+}
+.nav::after{
+    content:'' ;
+    display: block;
+    clear:both;
+}
+/* ########### header style ########## */
+.head-content{
+    position: absolute;
+    text-align: center;
+    top:60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+   
+}
+.head-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.head-content p{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* ################# COWIN################ */
+.cowin{
+    padding: 5rem 0;
+}
+.row{
+    height: 25rem;
+    box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.342);
+}
+.row1 .imgbox{
+    float: left;
+    width: 30%;
+}
+.row1 .textbox{
+    float: right;
+    width: 70%;
+}
+.row .imgbox{
+    height: 100%;
+}
+.row .textbox{
+    padding: 3em;
+    width: 70%;
+    height: 100%;
+    background:#fff;
+}
+.row .imgbox img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ########### NEWS ################ */
+#news{
+    padding: 2rem .5rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin: 2rem 2.3rem 0 2.3rem;
+    background: #f4f4f4;
+    font-size: 3rem;
+    color: rgb(68, 67, 67);
+
+}
+
+
+
+
+
+.NEWS{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    flex-wrap: wrap;
+}
+.NEWS .box{
+    position: relative; 
+    width: 32rem;
+    height: 40rem;
+    border-radius: 2rem;
+    color: blanchedalmond;
+    background: white;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin: .5rem 3rem;
+    transition: 0.5s;
+}
+.NEWS .box:hover{
+    transform: translateY(-2rem);
+}
+.NEWS .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, #fff, #038daf);
+}
+.NEWS .box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fff, #00a2ff);
+    filter: blur(3em);
+} 
+.NEWS .box:nth-child(2)::before,
+.NEWS .box:nth-child(2)::after{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+.NEWS .box:nth-child(3)::before,
+.NEWS .box:nth-child(3)::after{
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+.NEWS .box span{
+    position: absolute;
+    top: .6rem;
+    left: .6rem;
+    right: .6rem;
+    bottom: .6rem;
+    border-radius: 2rem;
+    /* background:  rgba(139, 136, 136, 0.322); */
+    z-index: 2;
+}
+.NEWS .box span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.1);
+    pointer-events: none;
+}
+
+.NEWS .box .content{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+.NEWS .box .content h2{
+    font-size: 2em;
+    color: rgb(3, 3, 3);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.NEWS .box .content p{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    line-height: 1.4em;
+}
+.NEWS .box .content a{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    padding: 2rem;
+    border-radius: 10em;
+    border: 2px ;
+    text-decoration: none;
+    font-weight: 700;
+}
+.NEWS .box .content .sp-btn a{
+    display: flex;
+    background: rgba(255, 255, 255, .05);
+    width: 50%;
+    left:25%;
+    font-size: 1.2rem;
+    font-family: 'TESLA';
+    text-transform: uppercase;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.425);
+    border-top: .1rem solid rgba(255, 255, 255, .1);
+    border-bottom: .1rem solid rgba(255, 255, 255, .1);
+    border-radius: 3rem;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
+}
+.NEWS .box .content .sp-btn:hover a{
+    letter-spacing: 0.3rem;
+}
+.News .sp-btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.651),transparent);
+    transform: skew(45deg) translateX(0);
+    transition: 0.5s;
+}
+.News .sp-btn:hover a::before{
+    transform: skew(45deg) translateX(200%);
+}
+.NEWS .sp-btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f00;
+    bottom: -4.1em;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 10rem;
+    transition: 0.5s;
+}
+.NEWS .sp-btn:hover:before{
+    bottom: -3.34rem;
+    height: 10%;
+    width: 42%;
+    border-radius: 20rem;
+    transition-delay: 0s;
+}
+.sec2 .more a{
+    display: flex;
+    background: rgba(255, 0, 0, 0.788);
+    width: 12%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    padding: 2rem 2rem;
+    font-family: 'TESLA';
+    text-transform: uppercase;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.425);
+    border-top: .1rem solid rgba(255, 255, 255, .1);
+    border-bottom: .1rem solid rgba(255, 255, 255, .1);
+    border-radius: 3rem;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
+}
+
+.sec2 .more:hover a{
+    letter-spacing: 0.3rem;
+}
+.more a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.651),transparent);
+    transform: skew(45deg) translateX(0);
+    transition: 0.5s;
+}
+.sec2 .more:hover a::before{
+    transform: skew(45deg) translateX(200%);
+}
+
+/* ###############footer############## */
+.footer{
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.socialmedia a:link,
+.socialmedia a:visited{
+    color:#f4f4f4;
+}
+.socialmedia i{
+    margin: 2rem;
+
+}
+
+/* ##################ABOUT US############# */
+.about{
+    padding: 5rem 0;
+}
+.aboutheading{
+    border-bottom: 6px solid #e63946;
+}
+
+/* ###########COUNT STYLE######## */
+.counts{
+    margin-top: 3rem;
+}
+.citem{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.citem span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+.citem p{
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem;
+}
+/* #######banner-styling####*/
+/* .cta-banner{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #00000057;
+    margin-top: 3rem;
+}
+
+.cta-banner-left{
+    width: 60%;
+    float: left;
+    background: #e63946;
+    margin-bottom: 2rem;
+}
+.cta-banner-right{
+    width: 40%;
+    float: right;
+    text-align: right;
+    background: #e63946;
+}
+.ctab-left::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.ctab-right:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cta-line{
+    font-weight: 700;
+    font: 2rem;
+    margin-top: 1.5rem;
+}
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    bottom: 4px solid white;
+    padding:0.3rem 2,5em ;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+} */
+
+/* ##########COnTACT##### */
+.contact-form{
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+.form-wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-wrap .add{
+    background: #fff;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+    height: 760px;
+
+}
+
+.form-wrap .add i{
+    display: inline-block;
+    margin: 1rem;
+}
+.form-wrap .add h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form-wrap .add-group{
+    margin-bottom: 3rem;
+}
+.form-wrap .add img{
+    max-width: 90%;
+    min-height:40rem ;
+    object-fit: cover;
+    object-position: right;
+}
+.form-wrap .form{
+    background: #fff;
+    width: 49%;
+    float: right;
+
+}
+
+/* ################font-styling############# */
+.form-wrap .form{
+    font-size: 1.6rem;
+    background: #fff;
+    width: 49%;
+    float: right;
+    padding: 1rem;
+    height: 760px;
+}
+.form-wrap .form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+    width: 69.2%;
+}
+.form-wrap .form label{
+    display: block;
+}
+
+.form-wrap .form-input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrap .form .form-group{
+    margin-bottom:1.2rem;
+}
+.form-wrap .form .form-group::after{
+    content: '*';
+    color: #e63946;
+}
+.form-wrap .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline:none;
+    border: none;
+    cursor:pointer;
+}
+
+/* .NEWS .box .content .img{
+    position:absolute;
+    bottom: 75%;
+
+}
+.NEWS .box .content .img2{
+    position: absolute;
+    bottom: 64%;
+
+} */
