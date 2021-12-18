@@ -605,7 +605,10 @@ h1 >a{
     float: right;
 
 }
-
+.form-wrap .add-group .whatsapp{
+    color: black;
+    font-weight: 400;
+}
 /* ################font-styling############# */
 .form-wrap .form{
     font-size: 1.6rem;
