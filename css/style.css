@@ -38,7 +38,7 @@ section .showcase{
 .header{
     position: relative;
     height: 95vh;
-    background:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0,0,0,0.35)) ,url(../img/-1x-1.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0,0,0,0.35)) ,url(../img/banner.jpg);
     background-blend-mode:overlay(rgba(233, 233, 233, 0.144));
     background-position: center;
     background-size: cover;
